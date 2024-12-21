@@ -1,16 +1,11 @@
 import React from 'react';
 
-const App = () => (
-  <MainSection />
 
-);
 
-function MainSection() {
+function Page() {
   return (
     <>
-      <header>
-        <img src="src/assets/react.svg" width="100px" alt="react logo" />
-      </header>
+      <Header/>
       <main>
         <h1>Fun facts about React</h1>
         <ul>
@@ -35,4 +30,11 @@ function MainSection() {
   )
 }
 
-export default App;
+function Header() {
+  return (
+    <header>
+      <img src="src/assets/react.svg" width="100px" alt="react logo" />
+    </header>
+  )
+}
+export default Page;
